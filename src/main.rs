@@ -3,9 +3,9 @@ mod models;
 use models::Phase;
 fn main() {
     let batxillerat = Phase {
-        name: String::from("Batxillerat"),
-        code: String::from("bat"),
+        name: "Batxillerat".to_string(),
+        code: "bat".to_string(),
     };
-    println!("Hello, world!");
+    println!("Hello, Timerambler!");
     println!("{:?}", batxillerat);
 }
