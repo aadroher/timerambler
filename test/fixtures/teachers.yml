@@ -1,0 +1,68 @@
+- name: Linguist 0
+  code: li0
+  subjects:
+    - cat
+    - cas
+# - name: Linguist 1
+#   code: li1
+#   subjects:
+#     - cat
+#     - cas
+- name: English 0
+  code: en0
+  subjects:
+    - ang
+# - name: English 1
+#   code: en1
+#   subjects:
+#     - ang
+- name: Philosopher 0
+  code: ph0
+  subjects:
+    - fil
+    - his
+    - cmc
+# - name: Philosopher 1
+#   code: ph1
+#   subjects:
+#     - fil
+#     - his
+#     - cmc
+- name: Social Cientist 0
+  code: sc0
+  subjects:
+    - mcs
+    - his
+    - eco
+    - geo
+    - cmc
+# - name: Social Cientist 1
+#   code: sc1
+#   subjects:
+#     - mcs
+#     - his
+#     - eco
+#     - geo
+#     - cmc
+- name: Mathematicican 0
+  code: ma0
+  subjects:
+    - mat
+    - mcs
+    - fis
+    - cmc
+# - name: Mathematicican 1
+#   code: ma1
+#   subjects:
+#     - mat
+#     - mcs
+#     - fis
+#     - qui
+- name: Scientist
+  code: sci
+  subjects:
+    - mat
+    - mcs
+    - fis
+    - qui
+    - cmc
