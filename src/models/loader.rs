@@ -3,12 +3,23 @@
 use super::phase::Phase;
 use std::fs;
 
+const FILE_PATH: &str = "test/fixtures/phases.yml";
+
+fn parse_phases(s: &str) -> Result<Vec<Phase>, serde_yaml::Error> {
+  let parsed_phases: Vec<Phase> = serde_yaml::from_str(&s)?;
+  Ok(parsed_phases)
+}
+
 pub fn load_phase() -> Phase {
-  let file_path = "../../test/fixtures/";
-  let result = fs::read_to_string(file_path);
+  let result = fs::read_to_string(FILE_PATH);
   match result {
-    Ok(file_contents) => println!("{}", file_contents),
-    Err(e) => println!("{:?}", e),
+    Ok(file_contents) => {
+      let phases = parse_phases(&file_contents);
+      println!("{:?}", phases);
+    }
+    Err(e) => {
+      println!("{:?}", e);
+    }
   };
 
   Phase {
